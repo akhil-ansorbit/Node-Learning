@@ -49,3 +49,13 @@ fs.rename(
     console.log("Renamed file");
   }
 );
+
+// //Delete file
+// fs.unlink(path.join(__dirname, "test2", "name.txt"), (err) => {
+//   console.log("File deleted");
+// });
+
+// //Remove folder
+// fs.rmdir(path.join(__dirname, "test1"), (err) => {
+//   console.log("Folder deleted successfully");
+// });
