@@ -17,7 +17,7 @@ fs.writeFile(
   "Helloo John",
   {},
   (err) => {
-    if (err) throw err;
+    // if (err) throw err;
     console.log(
       "Write successfully................................................................"
     );
@@ -29,7 +29,7 @@ fs.appendFile(
   path.join(__dirname, "test2", "hello.txt"),
   "  Helloo Doe",
   (err) => {
-    if (err) throw err;
+    // if (err) throw err;
     console.log("Append File successfully");
   }
 );
@@ -45,7 +45,7 @@ fs.rename(
   path.join(__dirname, "test2", "hello.txt"),
   path.join(__dirname, "test2", "name.txt"),
   (err, data) => {
-    if (err) throw err;
+    // if (err) throw err;
     console.log("Renamed file");
   }
 );
