@@ -36,7 +36,7 @@ fs.appendFile(
 
 // Read file
 fs.readFile(path.join(__dirname, "test2", "hello.txt"), "utf8", (err, data) => {
-  if (err) throw err;
+  // if (err) throw err;
   console.log("Read Data -", data);
 });
 
