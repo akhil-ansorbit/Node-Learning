@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(404, { "content-type": "text/html" });
     res.end("<h1>404 Error Page</h1>");
   }
-}); 
+});
 
 server.listen(5001, () => {
   console.log("Lesting to the 5001 port...");
