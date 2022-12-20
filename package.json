@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "starting nodeJs",
   "main": "index.js",
-  "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {

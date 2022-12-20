@@ -1,12 +1,17 @@
 const http = require("http");
 const express = require("express");
+const fs = require("fs");
 const app = express();
 
 const server = http.createServer((req, res) => {
   if (req.url == "/") {
     res.end("<h1>Hello from the server</h1>");
   } else if (req.url == "/about") {
-    res.end("<h1>Wel-come in AboutUs page</h1>");
+    console.log(__dirname);
+    fs.readFile(`${__dirname}/userAPI/userApi.json`, "utf8", (err, data) => {
+      res.end(data);
+    });
+    // res.end("<h1>Wel-come in AboutUs page</h1>");
   } else if (req.url == "/about/home") {
     res.end("<h1>Wel-come in About of Home page</h1>");
   } else {
