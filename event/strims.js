@@ -3,7 +3,7 @@ const server = http.createServer();
 const fs = require("fs");
 
 server.on("request", (req, res) => {
-  const rstream = fs.createReadStream("./reference/test2/name.txt");
+  const rstream = fs.createReadStream("../reference/test2/name.txt");
 
   rstream.on("data", (chunkdata) => {
     res.write(chunkdata);
