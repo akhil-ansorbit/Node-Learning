@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+// website
+// app.use(express.static(path.join(__dirname),'../reference/test2'));.
+
 app.get("/home", (req, res) => {
   // res.send("Helloo Ansorbit");
   res.status(200).send("Helloo Ansorbit with status code 200");
@@ -39,6 +42,14 @@ app.get("/api/json", (req, res) => {
     {
       id: 2,
       name: "Harshad",
+    },
+    {
+      id: 3,
+      name: "devang",
+    },
+    {
+      id: 4,
+      name: "Akhil",
     },
   ]);
 });
