@@ -16,8 +16,8 @@ app.get("/about", (req, res) => {
 
 app.get("/", (req, res) => {
   res.write("<h1>Helloo Wel-come in about page</h1>");
-  res.write("<h1>Helloo Wel-come in again about page</h1>");
-  res.send();
+  res.write("<h1>Helloo Wel-come in again about page</h1>");//github.com/kishanmundha/transport-app.git
+  https: res.send();
 });
 
 app.get("/api", (req, res) => {
